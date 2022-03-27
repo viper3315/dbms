@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <style>
+        .mainy {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cuntainer {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            font-family: sans-serif;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bolder;
+            background-color:azure;
+            height: 400px;
+        }
+
+
+        .in-cuntainer {
+            display: flex;
+        }
+
+        .in-cuntainer p:first-child {
+            margin-right: 60px;
+        }
+
+        input {
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .in2-cuntainer input {
+            width: 50px;
+        }
+
+        .in2-cuntainer input:first-child {
+            margin-right: 50px;
+        }
+
+        .in3-cuntainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            background-color:rgb(62, 222, 243);
+            height: 30px;
+            width:200px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
+
+    <div class="mainy">
+    <div class="cuntainer">
+        <h1>Card Details</h1>
+        <p>Name on Card</p>
+        <input type="text">
+        <p>Card Number</p>
+        <input type="text">
+        <div class="in-cuntainer">
+            <p>Cvv</p>
+            <p>Expiration</p>
+        </div>
+        <div class="in2-cuntainer">
+            <input type="text" placeholder = "***">
+            <input type="text" placeholder = "MM/YY">
+        </div>
+        <div class="in3-cuntainer">
+        <button><a href="{% url 'thankyou' %}">Pay</a></button>
+    </div>
+    </div>
+</div>
+
+{% endblock %}

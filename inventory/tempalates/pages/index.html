@@ -1,0 +1,43 @@
+{% extends 'base.html' %} 
+{% block content %}
+<section id="showcase">
+    <div class="container text-center">
+      <div class="home-search p-5">
+        <div class="overlay p-5">
+          <h1 class="display-4 mb-4">
+            Get Your Plant Right At Your Doorstep
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Alerts -->
+  {% include 'partials/_alerts.html' %}
+
+
+
+  <section id="services" class="py-5 bg-secondary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="fas fa-seedling fa-4x mr-4"></i>
+          <hr>
+          <h3>Plants Simplified</h3>
+          <p>Order plants ready to be placed in your home, office or garden. Just Unpack, Relax and Enjoy your green buddies</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-shipping-fast fa-4x mr-4"></i>
+          <hr>
+          <h3>Secure Shipping</h3>
+          <p>Our unique packaging will hold the plants in place and let the plant breathe so that it reaches you fresh without any mess.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-hands-helping fa-4x mr-4"></i>
+          <hr>
+          <h3>Detailed Guidance</h3>
+          <p>Get detailed plant care instructions from the website as well as real-time guidance from our Garden Experts on Whatsapp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
